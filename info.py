@@ -14,8 +14,8 @@ CACHE_TIME = 300
 USE_CAPTION_FILTER =  False
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in environ['ADMINS'].split()]
-CHANNELS = [int(ch) if re.search('^.\d+$', ch) else ch for ch in environ['CHANNELS'].split()]
+ADMINS = 1156597097
+CHANNELS = -1001201213484
 auth_users = [int(user) if re.search('^\d+$', user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
